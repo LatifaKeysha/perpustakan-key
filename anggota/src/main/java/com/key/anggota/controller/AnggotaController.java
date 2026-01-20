@@ -33,7 +33,7 @@ public class AnggotaController {
     public List<AnggotaModel> getAllAnggota() {
         log.info("Request received", kv("action", "GET_ALL"));
         List<AnggotaModel> result = anggotaService.getAllAnggota();
-        log.info("Request completed", kv("action", "GET_ALL"), kv("status", "sukses"), kv("count", result.size()));
+        log.info("Request completed", kv("action", "GET_ALL"), kv("status", "SUCCESS"), kv("count", result.size()));
         return result;
     }
 
